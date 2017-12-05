@@ -1,5 +1,7 @@
+<!doctype html>
 <html>
     <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
 	<title>Hipster Heatmap</title>
 <style>
       /* Always set the map height explicitly to define the size of the div
@@ -245,25 +247,31 @@
 		],
           center: {lat: 52.0930703, lng: 5.1165353 }
         });
-		var service = new google.maps.places.PlacesService(map);
-        service.nearbySearch({
-          location: {lat: 52.0930703, lng: 5.1165353 },
-          radius: 500,
-          type: ['food,store'],
-		  keyword:'("biologsich") OR ("ecologisch") OR ("lokaal")  OR ("vegetarisch") OR ("apple") OR ("mac")  OR ("vintage") OR ("healthy") OR ("barbier")   OR ("vegan") OR ("baard") OR ("nature") OR ("burgers") OR ("natural") OR ("hipster") OR ("tweede hands")'
-        }, (r,s)=>callback(r,s,map));
-      }
-
-      function callback(results, status,map) {
-        if (status === google.maps.places.PlacesServiceStatus.OK) {
-                    heatmap = new google.maps.visualization.HeatmapLayer({
-          data: getPoints(results),
-          map: map	
-
-          });		
-      }
-
+		
+		
+		
+		 var xmlHttp = new XMLHttpRequest();
+		 xmlHttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			let data = JSON.parse(this.responseText);
+	   
+		   let points = [data.features.length]; 
+		   for(var i=0;i<data.features.length;i++) 
+		   { 
+				let coord = data.features[i].geometry.coordinates;
+				points[i] = new google.maps.LatLng(coord[1],coord[0]); 
+		   } 
+		
+			heatmap = new google.maps.visualization.HeatmapLayer({
+			  map: map	,
+			  data: points 
+			  });		
+			}
+		};
+		xmlHttp.open( "GET", 'https://cors-anywhere.herokuapp.com/http://umap.openstreetmap.fr/nl/datalayer/457605/', true); 
+		xmlHttp.send(  );
        
+            
           
       }
 	  
@@ -275,11 +283,7 @@
 	  // Heatmap data: 500 Points
       function getPoints(results) {
 	       
-		   let retu = [results.length];
-		   for(var i=0;i<results.length;i++)
-		   {
-		   retu[i] = results[i].geometry.location;
-		   }
+		   
 	  
 	  return retu;
 	  }	 
