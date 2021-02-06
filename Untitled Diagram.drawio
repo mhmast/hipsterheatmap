@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-06T11:00:12.875Z" agent="5.0 (Windows)" etag="A4PpZ4UwknMXo2Riq9J-" version="14.2.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-06T11:01:47.978Z" agent="5.0 (Windows)" etag="DkFUCNJHmZvV4IbErChU" version="14.2.9" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="867" dy="491" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -58,7 +58,7 @@
         <mxCell id="NEZ7RZ7i4HVP9aI7dhXX-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;orthogonal=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="NEZ7RZ7i4HVP9aI7dhXX-16" target="NEZ7RZ7i4HVP9aI7dhXX-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NEZ7RZ7i4HVP9aI7dhXX-16" value="NAMEOFYOURPROJECT.Domain&lt;br&gt;《folder》" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;treeMoving=0;deletable=0;treeFolding=0;comic=0;autosize=0;" parent="1" vertex="1">
+        <mxCell id="NEZ7RZ7i4HVP9aI7dhXX-16" value="&lt;div&gt;NAMEOFYOURPROJECT&lt;/div&gt;&lt;div&gt;.Domain&lt;/div&gt;《folder》" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;treeMoving=0;deletable=0;treeFolding=0;comic=0;autosize=0;" parent="1" vertex="1">
           <mxGeometry x="1040.244140625" y="260" width="180" height="95" as="geometry" />
         </mxCell>
         <mxCell id="NEZ7RZ7i4HVP9aI7dhXX-17" value="NAMEOFYOURPROJECT&lt;br&gt;.Domain.csproj" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;treeMoving=0;deletable=0;treeFolding=0;comic=0;autosize=0;arcSize=50;" parent="1" vertex="1">
@@ -67,7 +67,7 @@
         <mxCell id="NEZ7RZ7i4HVP9aI7dhXX-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;orthogonal=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="NEZ7RZ7i4HVP9aI7dhXX-21" target="NEZ7RZ7i4HVP9aI7dhXX-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NEZ7RZ7i4HVP9aI7dhXX-21" value="NAMEOFYOURPROJECT&lt;br&gt;.DataAcces&lt;br&gt;.THETHINGYOUAREACCESSING&lt;br&gt;《folder》" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;treeMoving=0;deletable=0;treeFolding=0;comic=0;autosize=0;" parent="1" vertex="1">
+        <mxCell id="NEZ7RZ7i4HVP9aI7dhXX-21" value="NAMEOFYOURPROJECT&lt;br&gt;.DataAccess&lt;br&gt;.THETHINGYOUAREACCESSING&lt;br&gt;《folder》" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;treeMoving=0;deletable=0;treeFolding=0;comic=0;autosize=0;sketch=0;glass=0;shadow=0;" parent="1" vertex="1">
           <mxGeometry x="1262.744140625" y="260" width="190" height="95" as="geometry" />
         </mxCell>
         <mxCell id="NEZ7RZ7i4HVP9aI7dhXX-22" value="NAMEOFYOURPROJECT&lt;br&gt;.DataAccess&lt;br&gt;.THETHINGYOUAREACCESSING&lt;br&gt;.csproj" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;treeMoving=0;deletable=0;treeFolding=0;comic=0;autosize=0;arcSize=50;" parent="1" vertex="1">
